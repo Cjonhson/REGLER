@@ -7,7 +7,7 @@
     </head>
     <body>
         <div>
-            <div>
+            <div class="regler">
             <h1>Regler</h1>
 
             <button onclick="typeWriter()">Regler</button>
@@ -16,13 +16,14 @@
 
             <script>
                 var i = 0;
-                var txt = `Man skal slå en 1'er for at komme ud. 
-                \nMan skal svare på et spørgsmål ved hvert felt. 
-                \nMan samler oste på særlige felter. 
-                \nHvis man lander på samme felt, slår man den anden hjem, medmindre man svarer forkert på spørgsmålet, så ryger man selv hjem. 
-                \nNår man kommer hjem (i midten) skal man svare på et spørgsmål omkring det samlede norden.
-                \nDer er max 5 spillere.
-                \nMan rykker 1 felt resten af spillet.`;
+                var txt = `1. Man skal slå en 1'er for at komme ud. 
+                \n2. Man skal svare på et spørgsmål ved hvert felt. 
+                \n3. Man samler oste på særlige felter. 
+                \n4. Hvis man lander på samme felt, skal man svare på et spørgesmål. Svarer man rigtigt slår man den anden hjem, svarer forkert på spørgsmålet, så ryger man selv hjem. 
+                \n5. Når man kommer hjem (i midten) skal man svare på et spørgsmål omkring det samlede norden.
+                \n6. Svare man forkert på det sidste spørgsmål skal man slå med terningen igen, rykke ud af feltet og forsøge igen.
+                \n7. Man skal have 5 oste før man kan begynde at gå hjem.
+                \n8. Der er max 5 spillere.`;
                 var speed = 10;
 
                 function typeWriter() {
