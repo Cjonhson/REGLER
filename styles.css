@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(10, 46, 66);
+}
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: white;
+}
+
+#regler {
+    white-space: pre-wrap; /* Preserves new lines and spaces */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: white;
+}
+
+body{
+    width: 600px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+}

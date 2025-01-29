@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div>
+            <div>
+            <h1>Regler</h1>
+
+            <button onclick="typeWriter()">Regler</button>
+
+            <p id="regler"></p>
+
+            <script>
+                var i = 0;
+                var txt = `Man skal slå en 1'er for at komme ud. 
+                \nMan skal svare på et spørgsmål ved hvert felt. 
+                \nMan samler oste på særlige felter. 
+                \nHvis man lander på samme felt, slår man den anden hjem, medmindre man svarer forkert på spørgsmålet, så ryger man selv hjem. 
+                \nNår man kommer hjem (i midten) skal man svare på et spørgsmål omkring det samlede norden.
+                \nDer er max 5 spillere.
+                \nMan rykker 1 felt resten af spillet.`;
+                var speed = 10;
+
+                function typeWriter() {
+                    if (i < txt.length) {
+                    document.getElementById("regler").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>
